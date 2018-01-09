@@ -3,7 +3,7 @@
   ExtensionBundleId="com.example.cepgo-baby"
   ExtensionBundleVersion="1.0.0" Version="7.0">
   <ExtensionList>
-    <Extension Id="com.example.cepgo-baby.panel" Version="1.0.0"/>
+    <Extension Id="com.example.cepgo-baby" Version="1.0.0"/>
   </ExtensionList>
   <ExecutionEnvironment>
     <HostList>
@@ -18,7 +18,7 @@
     </RequiredRuntimeList>
   </ExecutionEnvironment>
   <DispatchInfoList>
-    <Extension Id="com.example.cepgo-baby.panel">
+    <Extension Id="com.example.cepgo-baby">
       <DispatchInfo>
         <Resources>
           <MainPath>./client/index.html</MainPath>

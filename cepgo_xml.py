@@ -23,7 +23,7 @@ def setup_manifest(dest_dir, extension_bundle_id, menu_name):
 
     extension_elements = manifest_tree.findall(".//Extension")
     for element in extension_elements:
-        element.set("Id", extension_bundle_id + ".panel")
+        element.set("Id", extension_bundle_id)
 
     # Set menu name
     menu_element = manifest_tree.find(".//Menu")
@@ -39,7 +39,7 @@ def setup_debug(dest_dir, extension_bundle_id):
 
     # Set attribute
     debug_extension_element = debug_tree.find(".//Extension")
-    debug_extension_element.set("Id", extension_bundle_id + ".panel")
+    debug_extension_element.set("Id", extension_bundle_id)
 
     # Write debug file
     debug_tree.write(dest_dir + "/.debug", encoding="UTF-8", xml_declaration=True, method="xml")
